@@ -126,11 +126,6 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
   
-        
-    - name: 添加玩客云
-      run: |
-        git clone https://github.com/shiyu1314/openwrt-onecloud/blob/6.1/tags/kernel-6.1 openwrt/target/linux/amlogic
-
     - name: 加载自定义配置
       run: |
         [ -e files ] && mv files openwrt/files
